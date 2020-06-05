@@ -5,7 +5,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: "Raleway", sans-serif !important;
+    font-family: Arimo, sans-serif;
+    min-width: 280px;
 }
 
 .container .row {
@@ -20,7 +21,8 @@ body {
 }
 
 .box span {
-    font-size: 20px !important;
+    font-size: 20px ;
+    vertical-align: center;
     /* display: inline; */
 }
 
@@ -31,4 +33,56 @@ body {
 
 .row a:hover {
     text-decoration: none;
+}
+
+@media (min-width: 1200px){
+    .box span {
+    	position: absolute;
+    	top: 37%;
+    	-ms-transform: translateY(-37%);
+  		transform: translateY(-37%);
+    }
+}
+
+/*@media (min-width: 992px) and (max-width:  1200px) {
+	.box {
+		width: 310px;
+	}
+	.col-lg-4 {
+		margin-left: 0px;
+	}
+	.box span {
+        position: absolute;
+    	top: 37%;
+    	left: 33%;
+    	-ms-transform: translateY(-37%);
+  		transform: translateY(-37%);
+    }
+}*/
+
+@media (min-width: 460px) and (max-width:  991px) {
+    .box span {
+        position: absolute;
+    	top: 37%;
+    	-ms-transform: translateY(-37%);
+  		transform: translateY(-37%);
+    }
+}
+
+@media (min-width: 400px) and (max-width:  460px) {
+    .box span {
+        position: absolute;
+        top: 37%;
+        -ms-transform: translateY(-37%);
+        transform: translateY(-37%);
+    }
+}
+
+@media (min-width: 340px) and (max-width:  400px) {
+    .box span {
+        position: absolute;
+    	top: 37%;
+    	-ms-transform: translateY(-37%);
+  		transform: translateY(-37%);
+    }
 }
